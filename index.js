@@ -92,7 +92,7 @@ Car.prototype.fill = function(gallons){
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby(name,age,favoriteToy) {
-  Person.call(this,favoriteToy);
+  Person.call(this,name,age);
   this.favoriteToy=favoriteToy;
 }
 Baby.prototype = Object.create(Person.prototype);
